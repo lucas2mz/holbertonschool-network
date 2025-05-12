@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # script that configures an Ubuntu server
-cp /etc/hosts /etc/hosts.bak
+sudo cp /etc/hosts /etc/hosts.bak
 
 # Remove existing entries for localhost and facebook.com
-sed -i '/\slocalhost$/d' /etc/hosts
-sed -i '/facebook.com/d' /etc/hosts
+sudo sed -i '/\slocalhost$/d' /etc/hosts
+sudo sed -i '/facebook.com/d' /etc/hosts
 
 # Add new entries
 echo "127.0.0.2 localhost" >> /etc/hosts
