@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Listen to port 98 with the localhost IP
+
+nc -l -p 98 -s 127.0.0.2
